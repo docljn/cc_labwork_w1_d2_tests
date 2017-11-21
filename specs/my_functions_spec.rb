@@ -69,15 +69,16 @@ class MyFunctionsTest < MiniTest::Test
     #   assert_equal(8, result)
     # end
 
-    #Given the radius of a sphere calculate the volume
-    def test_volume_of_sphere()
-      result = volume_of_sphere(2).round(2)
-      assert_equal(25.13, result)
-      #add test code here
-    end
-#
-#     #Given a value in farenheit, convert this into celsius.
-#     def test_fahrenheit_to_celsius()
+#     #Given the radius of a sphere calculate the volume
+#     def test_volume_of_sphere()
+#       result = volume_of_sphere(2).round(2)
+#       assert_equal(25.13, result)
 #       #add test code here
 #     end
+# #
+    #Given a value in farenheit, convert this into celsius.
+    def test_fahrenheit_to_celsius()
+      result = fahrenheit_to_celsius(100).round(1)
+      assert_equal(37.8, result)
+    end
  end
