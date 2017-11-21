@@ -153,3 +153,7 @@ end
 def volume_of_cube(length)
   return length ** 3
 end
+
+def volume_of_sphere(radius)
+  return Math::PI * radius**3
+end
