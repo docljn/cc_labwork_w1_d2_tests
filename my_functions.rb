@@ -1,74 +1,81 @@
-# my_funtions.rb
-
-# running a function is called "invoking a function"
-# method is a function which is associated/called on an object
-# method syntax is Object.name()
-
-# function with a question mark at the end indicates boolean return
-# function with exclamation mark at the end indicates destructive method
-
-# def = a function definition
-# greet = function name
-# name = parameter
-# method body is encapsulated: not accessible to any other code
-# return = ignore anything after this
-
-# WHY: easier to debug code when functions are separated out
+# my_functions.rb
 
 def greet(input_name, time_of_day)
-  words = "Hello #{input_name}, good #{time_of_day}."
-  return words  # function body
+  words = "Hello #{input_name}, good #{time_of_day}"
+  return words
 end
-
-# function call / invocation
-# "Lorna" = argument passed to function
-# p greet("Lorna", "afternoon")
-
-nickname = "Fluffy"
-
-time_now = Time.new.hour
-if time_now >= 12 && time_now < 18
-  time = "afternoon"
-elsif time_now >= 18
-  time = "night"
-else
-  time = "morning"
-end
-
-# p greet(nickname, time)
-
-#
-# Create a population_density function
-# >   - this will take two parameters
-# >   - call the first parameter population and the second area
-# >   - calculate the population density (e.g. `population / area`) and return it
-# >   - invoke the function using the population and area of Mauritius:
-# >     - population: 5373000
-# >     - area: 77933
-
-def population_density( population, area )
-  return population / area
-end
-
-# p population_density( 5373000, 77933 )
-
-
-
-
-#
-# > 1. Create an add function
-# >   - this will take two parameters
-# >   - call the first parameter first_number and the second second_number
-# >   - use the return keyword
-# >   - Invoke the function `add( 2, 3 )`
 
 def add(first_number, second_number)
-  return first_number + second_number
+  sum = first_number + second_number
+  return sum
 end
 
-# p add( 2, 3 )
-
-
-def subtract(number1, number2)
-  return number1 - number2
+def subtract(first_number, second_number)
+  result = first_number - second_number
+  return result
 end
+
+def population_density(population, area)
+  density = population / area
+  return density
+end
+
+def multiply(number1, number2)
+  result = number1 * number2
+  return result
+end
+
+def divide(number1, number2)
+  return number1 / number2
+end
+
+def length_of_string(string1)
+  result = string1.length()
+  return result
+end
+
+def join_string(string1, string2)
+  return string1 + string2
+end
+
+def add_string_as_number(string1, string2)
+  result = string1.to_i + string2.to_i
+  return result
+end
+
+def number_to_full_month_name(month_number)
+  case month_number
+  when 1
+    return "January"
+  when 3
+    return "March"
+  when 9
+    return "September"
+  end
+end
+
+def number_to_short_month_name(month_number)
+  case month_number
+  when 1
+    return "Jan"
+  when 3
+    return "Mar"
+  when 9
+    return "Sep"
+  end
+end
+
+def volume_of_cube(length)
+end
+
+my_name = "dou"
+time_period = "afternoon"
+
+mauritius_population = 5373000
+mauritius_area = 77933
+
+p greet(my_name, time_period)
+
+p add(2,3)
+
+p population_density(mauritius_population, mauritius_area)
