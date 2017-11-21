@@ -1,89 +1,93 @@
 # my_functions.rb
 
-my_name = "dou"
-time_period = "afternoon"
+# # Douglas' code
+#
+# my_name = "dou"
+# time_period = "afternoon"
+#
+# mauritius_population = 5373000
+# mauritius_area = 77933
+#
+# p greet(my_name, time_period)
+#
+# p add(2,3)
+#
+# p population_density(mauritius_population, mauritius_area)
+#
+# # what_year
+#
+# p "What year was Ruby created?"
+# correct = 1995
+# answer = gets.chomp.to_i
+#
+# if (answer == correct)
+#   p "Yes"
+# else
+#   p "Nope, Ruby was created in #{correct}"
+# end
+#
+# # what_animal
+#
+# p "What animal are you?"
+# name = gets.chomp.downcase
+#
+# if (name == "chicken")
+#   p "This is my favourite animal."
+# elsif (name == "kitten")
+#   p "Aww, I love kittens (for breakfast)."
+# else
+#   p "Sad, not my favourite animal."
+# end
+#
+#
+# # case_statement
+# # reference: https://www.w3resource.com/ruby/ruby-if-else-unless.php
+# # https://www.w3resource.com/ruby/ruby-if-else-unless.php
+#
+# p "What did you score?"
+# score = gets.chomp.to_i
+#
+# case score
+# when 10
+#   p "genius"
+# when 8..9
+#   p "merit"
+# when 5..7
+#   p "pass"
+# when 4
+#   p "resit"
+# else
+#   p "fail"
+# end
+#
+# # alternative syntax if only one result needed: single line if
+# score = 6
+# result = "fail"
+# result = "pass" if (score >= 6)
+# p result
+#
+#
+# # ternary syntax: can be confusing to read/debug
+# score = 6
+# result = score > 5 ? "pass" : "fail"
+# p result
+#
+#
+# # guard statement: only possible if there is only one option [not heavily used]
+# alex_hungry = true
+# alex_tired = true
+#
+# p "Alex is hangry" if alex_hungry && alex_tired
+# p "Alex needs a break" if alex_hungry || alex_tired
+#
+#
+#
+# def greet(input_name, time_of_day)
+#   words = "Hello #{input_name}, good #{time_of_day}"
+#   return words
+# end
 
-mauritius_population = 5373000
-mauritius_area = 77933
-
-p greet(my_name, time_period)
-
-p add(2,3)
-
-p population_density(mauritius_population, mauritius_area)
-
-# what_year.rb
-
-p "What year was Ruby created?"
-correct = 1995
-answer = gets.chomp.to_i
-
-if (answer == correct)
-  p "Yes"
-else
-  p "Nope, Ruby was created in #{correct}"
-end
-
-# what_animal.rb
-
-p "What animal are you?"
-name = gets.chomp.downcase
-
-if (name == "chicken")
-  p "This is my favourite animal."
-elsif (name == "kitten")
-  p "Aww, I love kittens (for breakfast)."
-else
-  p "Sad, not my favourite animal."
-end
-
-
-# case_statement.rb
-# reference: https://www.w3resource.com/ruby/ruby-if-else-unless.php
-# https://www.w3resource.com/ruby/ruby-if-else-unless.php
-
-p "What did you score?"
-score = gets.chomp.to_i
-
-case score
-when 10
-  p "genius"
-when 8..9
-  p "merit"
-when 5..7
-  p "pass"
-when 4
-  p "resit"
-else
-  p "fail"
-end
-
-# alternative syntax if only one result needed: single line if
-score = 6
-result = "fail"
-result = "pass" if (score >= 6)
-p result
-
-
-# ternary syntax: can be confusing to read/debug
-score = 6
-result = score > 5 ? "pass" : "fail"
-p result
-
-
-# guard statement: only possible if there is only one option [not heavily used]
-alex_hungry = true
-alex_tired = true
-
-p "Alex is hangry" if alex_hungry && alex_tired
-p "Alex needs a break" if alex_hungry || alex_tired
-
-# my_functions.rb
-
-def greet(input_name, time_of_day)
-  words = "Hello #{input_name}, good #{time_of_day}"
-  return words
-end
+# lab pair programming
 
 def add(first_number, second_number)
   sum = first_number + second_number
@@ -145,5 +149,7 @@ def number_to_short_month_name(month_number)
   end
 end
 
+# solo work
 def volume_of_cube(length)
+  return length ** 3
 end
