@@ -1,4 +1,7 @@
+# GEMS
 require("minitest/autorun")
+require("minitest/rg")
+# FILES
 require_relative("../my_functions")
 
 class MyFunctionsTest < MiniTest::Test
